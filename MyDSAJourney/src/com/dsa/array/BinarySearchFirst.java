@@ -4,7 +4,6 @@ public class BinarySearchFirst {
     public static void main(String[] args) {
         int numbers[] = {1, 2, 3, 6, 5, 8, 9, 10};
         int Key = 66;
-
         System.out.println(binarySearch(numbers, Key));
     }
 
