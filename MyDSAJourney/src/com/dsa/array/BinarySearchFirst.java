@@ -1,5 +1,7 @@
 package com.dsa.array;
 
+//binary searach program
+//
 public class BinarySearchFirst {
     public static void main(String[] args) {
         int numbers[] = {1, 2, 3, 6, 5, 8, 9, 10};

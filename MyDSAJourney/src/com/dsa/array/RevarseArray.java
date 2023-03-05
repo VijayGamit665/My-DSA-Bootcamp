@@ -16,11 +16,13 @@ public class RevarseArray {
             System.out.print(n +" ");
         }
 //        Arrays.stream(numbers).forEach(n-> System.out.println(n)); // foreach loop ,jav8
+//        Arrays.stream(numbers).forEach(System.out::println); //using :: operator or refferance
 
 //        Arrays.stream(numbers).filter(a-> a%2==0).forEach(n-> System.out.println(n)); // find even num by using filter java8
     }
     public static void reverseArrray(int[] arr){
         int start=0,end=arr.length-1;
+
 
         //with while loop
         while (start < end ){
