@@ -1,5 +1,5 @@
 package com.dsa.array;
-
+// Time Complex city o(n3) (brute force)
 public class PrintSubarrays {
 
     public static void main(String[] args) {
