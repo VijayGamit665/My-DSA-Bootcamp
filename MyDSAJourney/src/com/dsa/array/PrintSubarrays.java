@@ -1,7 +1,5 @@
 package com.dsa.array;
 
-import com.sun.source.doctree.SummaryTree;
-
 public class PrintSubarrays {
 
     public static void main(String[] args) {
@@ -15,9 +13,13 @@ public class PrintSubarrays {
             int Start = i;                                   // Start find
             for (int j = i; j < numbers.length; j++) {
                 int end = j;                               // end find
-                for (int k = Start; k <= end; k++) {           // print
+                int currSum = 0;
+                for (int k = Start; k <= end; k++) {
+                //  currSum += numbers[k];// same
+                    currSum = currSum + numbers[k];
                     System.out.print(numbers[k] + " ");   // subarray
                 }
+                System.out.print("= " + currSum);
                 ts++;
                 System.out.println();
             }
@@ -26,4 +28,6 @@ public class PrintSubarrays {
         System.out.println("Total subarrays " + ts);
 
     }
+
 }
+
