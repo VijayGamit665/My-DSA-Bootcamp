@@ -3,8 +3,11 @@ package com.dsa.array;
 public class MaxSubarrarsPrefixSum {
       // Time Complex city= O(n2)
     public static void main(String[] args) {
-        int numbers[] = {9, 8, 7, 6, 5, 4, 3, 2, 1};
+        int numbers[] = {-1,-2,-3,-4,-5,-6,-7,-8,-9};
+        int num[] = {9,8,-7,6,-4,3,-2,1};
         prefixArraySum(numbers);
+        kadanes(num);
+        kadanesMinSub(numbers);
     }
 
     public static void prefixArraySum(int numbers[]) {
@@ -32,6 +35,31 @@ public class MaxSubarrarsPrefixSum {
         System.out.println("Prefix sum " + maxSum);
     }
 
+    public static void kadanes(int num[]){
+       int ms = Integer.MIN_VALUE;
+       int cs = 0;
+       for (int i=0; i<num.length; i++){
+           cs = cs + num[i];
+           if (cs<0){
+               cs=0;
+           }
+           ms = Math.max(cs , ms);
+       }
+       System.out.println("our max subarray sum is " + ms);
+    }
+
+    public static void kadanesMinSub(int numbers[]){
+        int ms = 0;
+        int cs = Integer.MIN_VALUE;
+        for (int i=0; i<numbers.length; i++){
+            ms = numbers[i];
+            if(ms>0){
+                cs=ms;
+            }
+            cs = Math.max(ms,cs);
+        }
+        System.out.println("our  kadanes min Subarray is " + cs);
+    }
 }
 
 
