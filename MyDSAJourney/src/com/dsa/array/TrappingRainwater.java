@@ -1,6 +1,6 @@
 package com.dsa.array;
 
-public class TrappingRainwater {
+public class TrappingRainwater {  /// Time complex city o(n)
     public static void main(String[] args) {
         int hight[] = {4, 2, 0, 6, 3, 2, 5};
         System.out.println(trappingRainwater(hight));
