@@ -29,12 +29,23 @@ class Std {
     String Pass;
     int marks[];
 
-    Std(Std s1) {
+    // Shallow copy constructor
+    //Std(Std s1) {
+     //   marks = new int[3];
+     //   this.name = s1.name;
+     //   this.Roll = s1.Roll;
+    //  this.marks = s1.marks;
+    //}
+    // Deep Copy constructor
+      Std(Std s1){
         marks = new int[3];
         this.name = s1.name;
         this.Roll = s1.Roll;
-        this.marks = s1.marks;
-    }
+        for (int i=0;i<3;i++){
+            this.marks[i]=s1.marks[i];
+        }
+
+      }
 
     Std() {
         marks = new int[3];
