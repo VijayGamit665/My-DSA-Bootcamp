@@ -24,6 +24,7 @@ public class sortedRotatedArray {
         if (arr[mid] == tar) {
             return mid;
         }
+
         // mid on L1
 
         if (arr[si] <= arr[mid]) {
@@ -37,7 +38,9 @@ public class sortedRotatedArray {
                 return search(arr, tar, mid + 1, ei);
             }
         }
+
         // mid on L2
+
         else {
             // case c : right search
 
