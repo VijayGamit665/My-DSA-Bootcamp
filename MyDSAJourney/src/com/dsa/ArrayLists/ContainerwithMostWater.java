@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class ContainerwithMostWater {
 
-    public static void main(String[] args) {  // Brute Force  Time Complex city = O(n^2)
+    public static void main(String[] args) {
 
         ArrayList<Integer> height = new ArrayList<>();
 
@@ -22,7 +22,7 @@ public class ContainerwithMostWater {
         System.out.println("2 Pointer Approach = " + storeWater2(height));
     }
 
-    public static int storeWater(ArrayList<Integer> height) {
+    public static int storeWater(ArrayList<Integer> height) {  // Brute Force  Time Complex city = O(n^2)
 
         int maxWater = 0;
 
