@@ -11,6 +11,7 @@ public class SpiralMatrix {
                 {13, 14, 15, 16, 24},
                 {17, 18, 19, 20, 25}};
         printSpiral(matrix);
+
     }
 
     public static void printSpiral(int matrix[][]) {
@@ -18,6 +19,7 @@ public class SpiralMatrix {
         int starCol = 0;
         int endRow = matrix.length - 1;
         int endCol = matrix[0].length - 1;
+
         while (starRow <= endRow && starCol <= endCol) {
             // Top Boundary
             for (int j = starCol; j <= endCol; j++) {
@@ -49,5 +51,6 @@ public class SpiralMatrix {
         }
         System.out.println();
     }
+
 
 }
